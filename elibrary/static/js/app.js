@@ -2,7 +2,6 @@ const state = {
   books: [],
   query: "",
   type: "ALL",
-  letter: "ALL",
   sort: "title",
 };
 
@@ -71,11 +70,6 @@ function render() {
   const q = state.query.trim().toLowerCase();
   let list = state.books.filter((b) => {
     if (state.type !== "ALL" && b.filetype !== state.type) return false;
-    const first = [...(b.title.trim() || "?")][0];
-    if (state.letter !== "ALL") {
-      const grp = DEVANAGARI_GROUPS.find(g => g.letters.includes(state.letter));
-      if (!grp || (first || "?") !== state.letter && !grp.letters.includes(first)) return false;
-    }
     if (q && !b.title.toLowerCase().includes(q)) return false;
     return true;
   });
@@ -100,26 +94,8 @@ function render() {
   });
 }
 
-const DEVANAGARI_GROUPS = [
-  { label: "अ-आ", letters: ["अ", "आ"] },
-  { label: "इ-उ", letters: ["इ", "उ"] },
-  { label: "ए-ऑ", letters: ["ए", "ऎ", "ऐ", "ओ", "औ", "ऑ"] },
-  { label: "क-ग", letters: ["क", "ख", "ग"] },
-  { label: "च-छ", letters: ["च", "छ"] },
-  { label: "ज-ज", letters: ["ज", "झ"] },
-  { label: "ट-त", letters: ["ट", "ठ", "ड", "ढ", "त", "थ", "द", "ध"] },
-  { label: "न-फ", letters: ["न", "प", "फ"] },
-  { label: "ब-भ", letters: ["ब", "भ"] },
-  { label: "म-य", letters: ["म", "य"] },
-  { label: "र-ल", letters: ["र", "ल"] },
-  { label: "व-व", letters: ["व"] },
-  { label: "श-स", letters: ["श", "ष", "स"] },
-  { label: "ह", letters: ["ह"] },
-];
-
 function buildChips() {
   const typeRow = $("#typeChips");
-  const letterRow = $("#letterChips");
   const types = ["ALL", ...new Set(state.books.map((b) => b.filetype))];
   typeRow.innerHTML = types
     .map(
@@ -127,34 +103,9 @@ function buildChips() {
         `<button class="chip ${state.type === t ? "on" : ""}" data-k="type" data-v="${t}">${t === "ALL" ? "सभी" : t.toUpperCase()}</button>`
     )
     .join("");
-  const booksWithDevanagari = state.books.filter((b) => {
-    const first = [...(b.title.trim() || "?")][0];
-    return /[\u0900-\u097F]/.test(first || "");
-  });
-  const letterRow2 = DEVANAGARI_GROUPS.filter(g =>
-    g.letters.some(l => booksWithDevanagari.some(b => [...(b.title.trim() || "?")][0] === l))
-  );
-  const currentGroup = DEVANAGARI_GROUPS.find(g => g.letters.includes(state.letter));
-  letterRow.innerHTML = `<button class="chip ${state.letter === "ALL" ? "on" : ""}" data-k="letter" data-v="ALL">अ-ह</button>` +
-    letterRow2
-      .map(
-        (g) =>
-          `<button class="chip ${currentGroup === g ? "on" : ""}" data-k="letter" data-v="${g.letters[0]}">${g.label}</button>`
-      )
-      .join("");
-  document.querySelectorAll(".chip").forEach((ch) =>
+  document.querySelectorAll("#typeChips .chip").forEach((ch) =>
     ch.addEventListener("click", () => {
-      if (ch.dataset.k === "letter") {
-        const v = ch.dataset.v;
-        if (v === "ALL") {
-          state.letter = "ALL";
-        } else {
-          const grp = DEVANAGARI_GROUPS.find(g => g.letters.includes(v));
-          if (grp) state.letter = grp.letters[0];
-        }
-      } else {
-        state[ch.dataset.k] = ch.dataset.v;
-      }
+      state.type = ch.dataset.v;
       buildChips();
       render();
       window.scrollTo({ top: 0, behavior: "smooth" });
