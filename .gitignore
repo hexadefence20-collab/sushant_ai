@@ -1,5 +1,5 @@
-# Secrets (Tavily key etc.)
-config.py
+# Secrets (Tavily key etc.) -- root-level only, NOT elibrary/app/config.py
+/config.py
 
 # Logs & temp images
 *.log
