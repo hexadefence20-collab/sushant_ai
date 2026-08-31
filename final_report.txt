@@ -1,0 +1,42 @@
+FINAL REPORT - Hindi Top Novels Download (Tavily + Internet Archive)
+====================================================================
+Generated: 31-Aug-2026
+Project dir: /home/sushant/Desktop/BGC/SUSHANT
+Output dir : hindi_novels/
+Tracking  : download_journal.json
+
+RESULT: 70 of 101 listed titles downloaded & verified (PDF/epub/txt/html),
+        31 could not be located as verified free sources (see below).
+
+METHOD
+- Discovery: Tavily API (config.py TAVILY_API_KEY) + Internet Archive metadata
+  and full-text search.
+- Downloader: smart_download.py (preferred, archive.org-first + Tavily fallback
+  + content validation) and downloader.py (first pass, now superseded).
+- Validation: Devanagari ratio check via pdftotext (text-layer PDFs), title
+  presence, min size; scanned PDFs (no text layer) pass by hand-verification.
+- Rescue fixes this session: इडगाह (archive.org item Idgah-Hindi-Premchand →
+  epub), भारत दुर्दशा (hindisamay.com full text → html).
+
+VERIFIED DOWNLOADS (70)
+- Godan, Godan-buffet, Gabrhan etc. present in hindi_novels/ ; full list is in
+  download_journal.json (status=ok fields carry novel/url/size).
+
+NOT VERIFIED / NO FREE SOURCE FOUND (31)
+- पिंजर (अमृता प्रीतम, d.2005) — in copyright
+- टोपी शुक्ला (राही मासूम रज़ा, d.1992) — in copyright
+- टीस, मृत शरीरों की कविता, बाल चण्डिका (poetry/verse, no free full text found)
+- अँधेरे और उजाले, साँवले सपनों की याद, इन्दुलेखा, कथुली, कलिंग कन्या,
+  कुंवारवती, शेष प्रश्न, प्रकाश वृत्त, मानसी, स्वर्ण स्वप्न, तपोभूमि, परिणय,
+  जयंती, जुगलबंदी, अमृत संदेश, सात फेरे, पानीदार, सुलेखा, हरिदर्शन, जँभीर का
+  बाग, सम्पूर्ण दुःख की परिषद, पोस्टमर्‌टम, आग और धुआं, बिरजू की बिटिया,
+  फूल का खेल, अँधी सड़क — no verified free/complete copy found on the open web.
+
+KNOWN GOOD SOURCES (for reruns / manual follow-up)
+- तमस : archive.org/download/tamas-upanyas-bhisham-sahni
+- कोमल गाँधार : archive.org/download/in.ernet.dli.2015.537929/2015.537929.Komal-Gandhar.pdf
+- अजनबी : archive.org/download/in.ernet.dli.2015.525807/2015.525807.Ajnabi.pdf
+- गोदान : archive.org/download/Godan-Hindi/GodaanByMunshiPremchandEbook.pdf
+- जलन-type single-word titles need special contains-guard (short-title bug).
+
+STATUS SUMMARY: 70/101 done. Rerun script: python3.12 smart_download.py --novels <file> --workers 6

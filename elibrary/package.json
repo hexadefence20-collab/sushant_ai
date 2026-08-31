@@ -1,0 +1,16 @@
+{
+  "name": "elibrary",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "epubjs": "^0.3.93",
+    "pdfjs-dist": "^4.10.38"
+  }
+}

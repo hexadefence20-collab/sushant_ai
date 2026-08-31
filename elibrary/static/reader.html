@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="hi" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>पाठक — Sushant Kumar eLibrary</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+  <link rel="stylesheet" href="/app/css/main.css">
+  <link rel="stylesheet" href="/app/css/reader.css">
+</head>
+<body class="reader-body">
+  <header class="reader-bar">
+    <button id="backBtn" class="rbtn" title="लाइब्रेरी पर वापस" aria-label="Back">←</button>
+    <div class="r-title-wrap">
+      <span id="rTitle" class="r-title">लोड हो रहा है…</span>
+      <span id="rMeta" class="r-meta"></span>
+    </div>
+    <div class="r-ctrl-row">
+      <button id="themeBtn" class="rbtn" title="थीम बदलें">🌙</button>
+      <button id="zoomOut" class="rbtn" title="छोटा करें">−</button>
+      <span id="rZoom" class="r-zoom">100%</span>
+      <button id="zoomIn" class="rbtn" title="बड़ा करें">+</button>
+      <button id="fullBtn" class="rbtn" title="फुल स्क्रीन">⛶</button>
+    </div>
+  </header>
+
+  <main class="reader-main">
+    <div id="progressBar" class="progress"><span id="progressFill" class="progress-fill"></span></div>
+    <div class="stage" id="stage"></div>
+    <div id="wm" class="watermark" aria-hidden="true"></div>
+    <button id="prevBtn" class="navbtn nav-prev" title="पिछला पृष्ठ">‹</button>
+    <button id="nextBtn" class="navbtn nav-next" title="अगला पृष्ठ">›</button>
+    <div id="pageInfo" class="pageinfo" title="पृष्ठ पर क्लिक करें → पेज जंप" role="button">—</div>
+  </main>
+
+  <footer class="reader-nav" id="readerNav" hidden>
+    <button id="navPrev" class="rn-btn" title="पिछला पृष्ठ">‹ पिछला</button>
+    <div class="rn-center">
+      <input id="pageSlider" class="page-slider" type="range" min="1" max="1" value="1" aria-label="पृष्ठ स्लाइडर">
+      <div class="rn-jump">
+        <span class="rn-label">पृष्ठ</span>
+        <input id="pageInput" class="page-input" type="number" min="1" value="1" inputmode="numeric" aria-label="पृष्ठ संख्या">
+        <button id="gotoBtn" class="rn-btn small" title="जाएँ">जाएँ</button>
+        <button id="pagesBtn" class="rn-btn small" title="पृष्ठ चुनें">📑 पृष्ठ</button>
+      </div>
+    </div>
+    <button id="navNext" class="rn-btn" title="अगला पृष्ठ">अगला ›</button>
+  </footer>
+
+  <div id="pagesModal" class="modal" hidden>
+    <div class="modal-panel">
+      <div class="modal-head">
+        <span>पृष्ठ चुनें</span>
+        <button id="modalClose" class="rbtn small">✕</button>
+      </div>
+      <input id="modalSearch" class="modal-search" type="number" min="1" placeholder="पृष्ठ संख्या टाइप करें (जैसे 55)…">
+      <div id="pagesGrid" class="pages-grid"></div>
+      <div class="modal-foot"><span id="modalRange"></span></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" hidden></div>
+  <script src="/vendor/epub.min.js"></script>
+  <script type="module" src="/app/js/reader.js"></script>
+</body>
+</html>

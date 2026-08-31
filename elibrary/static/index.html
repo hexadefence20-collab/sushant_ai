@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="hi" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>Sushant Kumar eLibrary — हिंदी उपन्यास संग्रह</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+  <link rel="stylesheet" href="/app/css/main.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">📚</span>
+      <span class="brand-text">
+        <span class="brand-title">e-Library</span>
+        <span class="brand-sub">by Sushant Kumar</span>
+      </span>
+    </div>
+    <div class="topbar-right">
+      <button id="themeToggle" class="iconbtn" aria-label="Theme" title="Theme">🌙</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1 class="hero-title">हिंदी <em>उपन्यास</em> संग्रह</h1>
+    <p class="hero-tag">सुशांत कुमार e-लाइब्रेरी — चुनें और पढ़ें, डाउनलोड की कोई ज़रूरत नहीं।</p>
+    <div class="search-wrap">
+      <input id="searchInput" class="search" type="search" placeholder="उपन्यास खोजें… (जैसे गोदान, तमस)" autocomplete="off" spellcheck="false">
+      <span class="search-ico">🔍</span>
+    </div>
+    <div class="filters">
+      <div class="chiprow" id="typeChips"></div>
+      <div class="chiprow" id="letterChips"></div>
+    </div>
+  </section>
+
+  <main>
+    <div class="countbar">
+      <span id="countText">लोड हो रहा है…</span>
+      <select id="sortSel" class="sortsel" aria-label="Sort">
+        <option value="title">शीर्षक (क से)</option>
+        <option value="size">बड़ा आकार</option>
+        <option value="pages">ज़्यादा पृष्ठ</option>
+      </select>
+    </div>
+    <div id="skeleton" class="grid" aria-hidden="true">
+      <div class="card skeleton-card"><div class="sk sk-cover"></div><div class="sk sk-line"></div><div class="sk sk-line short"></div></div>
+      <div class="card skeleton-card"><div class="sk sk-cover"></div><div class="sk sk-line"></div><div class="sk sk-line short"></div></div>
+      <div class="card skeleton-card"><div class="sk sk-cover"></div><div class="sk sk-line"></div><div class="sk sk-line short"></div></div>
+      <div class="card skeleton-card"><div class="sk sk-cover"></div><div class="sk sk-line"></div><div class="sk sk-line short"></div></div>
+      <div class="card skeleton-card"><div class="sk sk-cover"></div><div class="sk sk-line"></div><div class="sk sk-line short"></div></div>
+      <div class="card skeleton-card"><div class="sk sk-cover"></div><div class="sk sk-line"></div><div class="sk sk-line short"></div></div>
+      <div class="card skeleton-card"><div class="sk sk-cover"></div><div class="sk sk-line"></div><div class="sk sk-line short"></div></div>
+      <div class="card skeleton-card"><div class="sk sk-cover"></div><div class="sk sk-line"></div><div class="sk sk-line short"></div></div>
+    </div>
+    <div id="grid" class="grid"></div>
+    <div id="empty" class="empty" hidden>
+      <div class="empty-emoji">📭</div>
+      <p>कोई उपन्यास नहीं मिला</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 <strong>Sushant Kumar</strong> — Developed by Sushant Kumar · सभी अखिल भारतीय उपन्यास पढ़ने हेतु</p>
+  </footer>
+
+  <div id="toast" class="toast" hidden></div>
+  <script type="module" src="/app/js/app.js"></script>
+</body>
+</html>

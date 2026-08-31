@@ -1,0 +1,506 @@
+{
+  "गोदान": {
+    "novel": "गोदान",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "गबन": {
+    "novel": "गबन",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "निर्मला": {
+    "novel": "निर्मला",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "कर्मभूमि": {
+    "novel": "कर्मभूमि",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "गुनाहों का देवता": {
+    "novel": "गुनाहों का देवता",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "रंगभूमि": {
+    "novel": "रंगभूमि",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "प्रेमाश्रम": {
+    "novel": "प्रेमाश्रम",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "गृहदाह": {
+    "novel": "गृहदाह",
+    "status": "ok",
+    "source": "web"
+  },
+  "सत्य के प्रयोग": {
+    "novel": "सत्य के प्रयोग",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "मागधी": {
+    "novel": "मागधी",
+    "status": "ok",
+    "source": "web"
+  },
+  "मैला आँचल": {
+    "novel": "मैला आँचल",
+    "status": "failed",
+    "source": "web",
+    "note": "html removed (garbage)"
+  },
+  "पिंजर": {
+    "novel": "पिंजर",
+    "status": "failed"
+  },
+  "तीसरी कसम": {
+    "novel": "तीसरी कसम",
+    "status": "ok",
+    "restored": "backup",
+    "size": 3959078
+  },
+  "तमस": {
+    "novel": "तमस",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "राग दरबारी": {
+    "novel": "राग दरबारी",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "आधा गाँव": {
+    "novel": "आधा गाँव",
+    "status": "ok",
+    "source": "web"
+  },
+  "ऑक्सीजन": {
+    "novel": "ऑक्सीजन",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "अजनबी": {
+    "novel": "अजनबी",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "कितने पाकिस्तान": {
+    "novel": "कितने पाकिस्तान",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "सूरज का सातवाँ घोड़ा": {
+    "novel": "सूरज का सातवाँ घोड़ा",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "आग और धुआं": {
+    "novel": "आग और धुआं",
+    "status": "failed"
+  },
+  "शेखर: एक जीवनी": {
+    "novel": "शेखर: एक जीवनी",
+    "status": "ok",
+    "source": "web"
+  },
+  "दस प्रतिशत": {
+    "novel": "दस प्रतिशत",
+    "status": "ok",
+    "source": "web"
+  },
+  "टोपी शुक्ला": {
+    "novel": "टोपी शुक्ला",
+    "status": "failed"
+  },
+  "बाणभट्ट की आत्मकथा": {
+    "novel": "बाणभट्ट की आत्मकथा",
+    "status": "failed",
+    "source": "web",
+    "note": "html removed (garbage)"
+  },
+  "नदी के द्वीप": {
+    "novel": "नदी के द्वीप",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "मृत शरीरों की कविता": {
+    "novel": "मृत शरीरों की कविता",
+    "status": "failed"
+  },
+  "बूँद": {
+    "novel": "बूँद",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "उसने कहा था": {
+    "novel": "उसने कहा था",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "टीस": {
+    "novel": "टीस",
+    "status": "failed"
+  },
+  "बिरजू की बिटिया": {
+    "novel": "बिरजू की बिटिया",
+    "status": "failed"
+  },
+  "छोटे आदमी की बड़ी कहानी": {
+    "novel": "छोटे आदमी की बड़ी कहानी",
+    "status": "ok",
+    "source": "web"
+  },
+  "काले बादल": {
+    "novel": "काले बादल",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "कंकाल": {
+    "novel": "कंकाल",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "पुराने जख्म": {
+    "novel": "पुराने जख्म",
+    "status": "ok",
+    "source": "web"
+  },
+  "साँवले सपनों की याद": {
+    "novel": "साँवले सपनों की याद",
+    "status": "failed"
+  },
+  "तितली": {
+    "novel": "तितली",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "महाभोज": {
+    "novel": "महाभोज",
+    "status": "failed",
+    "restored": "backup",
+    "size": 321241,
+    "note": "html removed (garbage)"
+  },
+  "फूल का खेल": {
+    "novel": "फूल का खेल",
+    "status": "failed"
+  },
+  "सम्प्रत्ति का स्वर्ग": {
+    "novel": "सम्प्रत्ति का स्वर्ग",
+    "status": "ok",
+    "restored": "backup",
+    "size": 16911023
+  },
+  "जहाज़ों का सफ़र": {
+    "novel": "जहाज़ों का सफ़र",
+    "status": "ok",
+    "source": "web"
+  },
+  "सेवासदन": {
+    "novel": "सेवासदन",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "वे आँखें": {
+    "novel": "वे आँखें",
+    "status": "ok",
+    "restored": "backup",
+    "size": 4737790
+  },
+  "अँधेरे और उजाले": {
+    "novel": "अँधेरे और उजाले",
+    "status": "failed"
+  },
+  "भारत दुर्दशा": {
+    "novel": "भारत दुर्दशा",
+    "status": "ok",
+    "url": "hindisamay.com",
+    "size": 82965
+  },
+  "चन्द्रकान्ता": {
+    "novel": "चन्द्रकान्ता",
+    "status": "ok",
+    "source": "web"
+  },
+  "भाग्यश्री": {
+    "novel": "भाग्यश्री",
+    "status": "failed",
+    "restored": "backup",
+    "size": 146751,
+    "note": "html removed (garbage)"
+  },
+  "विद्यासागर": {
+    "novel": "विद्यासागर",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "जँभीर का बाग": {
+    "novel": "जँभीर का बाग",
+    "status": "failed"
+  },
+  "वरदान": {
+    "novel": "वरदान",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "कोमल गाँधार": {
+    "novel": "कोमल गाँधार",
+    "status": "failed",
+    "source": "web",
+    "note": "html removed (garbage)"
+  },
+  "चन्द्रकान्ता संतति": {
+    "novel": "चन्द्रकान्ता संतति",
+    "status": "ok",
+    "restored": "backup",
+    "size": 38033329
+  },
+  "पल्लव": {
+    "novel": "पल्लव",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "कायाकल्प": {
+    "novel": "कायाकल्प",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "जुलूस": {
+    "novel": "जुलूस",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "पूस की रात": {
+    "novel": "पूस की रात",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "परीक्षा": {
+    "novel": "परीक्षा",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "तमन्ना": {
+    "novel": "तमन्ना",
+    "status": "ok",
+    "restored": "backup",
+    "size": 211689
+  },
+  "जयंती": {
+    "novel": "जयंती",
+    "status": "failed"
+  },
+  "लड्डू": {
+    "novel": "लड्डू",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "इन्दुलेखा": {
+    "novel": "इन्दुलेखा",
+    "status": "failed"
+  },
+  "कफन": {
+    "novel": "कफन",
+    "status": "failed",
+    "restored": "backup",
+    "size": 753135,
+    "note": "html removed (garbage)"
+  },
+  "मनोरमा": {
+    "novel": "मनोरमा",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "सम्पूर्ण दुःख की परिषद": {
+    "novel": "सम्पूर्ण दुःख की परिषद",
+    "status": "failed"
+  },
+  "कर्मभूमि की कहानी": {
+    "novel": "कर्मभूमि की कहानी",
+    "status": "ok",
+    "restored": "backup",
+    "size": 2877158
+  },
+  "पोस्टमर्‌टम": {
+    "novel": "पोस्टमर्‌टम",
+    "status": "failed"
+  },
+  "अमर बलिदान": {
+    "novel": "अमर बलिदान",
+    "status": "failed",
+    "restored": "backup",
+    "size": 185398,
+    "note": "html removed (garbage)"
+  },
+  "कुरूक्षेत्र": {
+    "novel": "कुरूक्षेत्र",
+    "status": "failed",
+    "restored": "backup",
+    "size": 185757,
+    "note": "html removed (garbage)"
+  },
+  "हरिदर्शन": {
+    "novel": "हरिदर्शन",
+    "status": "failed"
+  },
+  "परिणय": {
+    "novel": "परिणय",
+    "status": "failed"
+  },
+  "बाल चण्डिका": {
+    "novel": "बाल चण्डिका",
+    "status": "failed"
+  },
+  "पानीदार": {
+    "novel": "पानीदार",
+    "status": "failed"
+  },
+  "मीरा": {
+    "novel": "मीरा",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "अँधी सड़क": {
+    "novel": "अँधी सड़क",
+    "status": "failed"
+  },
+  "हल्दी घाटी": {
+    "novel": "हल्दी घाटी",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "जूठन": {
+    "novel": "जूठन",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "किसानों को": {
+    "novel": "किसानों को",
+    "status": "failed",
+    "restored": "backup",
+    "size": 215737,
+    "note": "html removed (garbage)"
+  },
+  "आम के पेड़": {
+    "novel": "आम के पेड़",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "कथुली": {
+    "novel": "कथुली",
+    "status": "failed"
+  },
+  "मोहनदास": {
+    "novel": "मोहनदास",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "एक आश्रम": {
+    "novel": "एक आश्रम",
+    "status": "ok",
+    "restored": "backup",
+    "size": 561723
+  },
+  "सुलेखा": {
+    "novel": "सुलेखा",
+    "status": "failed"
+  },
+  "इडगाह": {
+    "novel": "इडगाह",
+    "status": "ok",
+    "url": "https://archive.org/download/Idgah-Hindi-Premchand/ala-22-idgah.epub",
+    "size": 21021812
+  },
+  "यही है सच": {
+    "novel": "यही है सच",
+    "status": "failed",
+    "restored": "backup",
+    "size": 318587,
+    "note": "html removed (garbage)"
+  },
+  "जगदीश का तीर": {
+    "novel": "जगदीश का तीर",
+    "status": "ok",
+    "restored": "backup",
+    "size": 3311306
+  },
+  "स्वर्ण स्वप्न": {
+    "novel": "स्वर्ण स्वप्न",
+    "status": "failed"
+  },
+  "मानसी": {
+    "novel": "मानसी",
+    "status": "failed"
+  },
+  "तपोभूमि": {
+    "novel": "तपोभूमि",
+    "status": "failed"
+  },
+  "विपथगामिनी": {
+    "novel": "विपथगामिनी",
+    "status": "ok",
+    "restored": "backup",
+    "size": 743482
+  },
+  "सात फेरे": {
+    "novel": "सात फेरे",
+    "status": "failed"
+  },
+  "जुगलबंदी": {
+    "novel": "जुगलबंदी",
+    "status": "failed"
+  },
+  "युद्ध विराम": {
+    "novel": "युद्ध विराम",
+    "status": "ok",
+    "restored": "backup",
+    "size": 1842947
+  },
+  "कलिंग कन्या": {
+    "novel": "कलिंग कन्या",
+    "status": "failed"
+  },
+  "अमृत संदेश": {
+    "novel": "अमृत संदेश",
+    "status": "failed"
+  },
+  "कुंवारवती": {
+    "novel": "कुंवारवती",
+    "status": "failed"
+  },
+  "वाटिका": {
+    "novel": "वाटिका",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "मुक्ति मार्ग": {
+    "novel": "मुक्ति मार्ग",
+    "status": "ok",
+    "source": "archive.org"
+  },
+  "शेष प्रश्न": {
+    "novel": "शेष प्रश्न",
+    "status": "failed"
+  },
+  "प्रकाश वृत्त": {
+    "novel": "प्रकाश वृत्त",
+    "status": "failed"
+  },
+  "एक और प्रेम": {
+    "novel": "एक और प्रेम",
+    "status": "ok",
+    "restored": "backup",
+    "size": 4721119
+  },
+  "जलन": {
+    "novel": "जलन",
+    "status": "ok",
+    "source": "archive.org"
+  }
+}

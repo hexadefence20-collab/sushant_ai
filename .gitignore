@@ -1,0 +1,13 @@
+# Secrets (Tavily key etc.)
+config.py
+
+# Logs & temp images
+*.log
+brave_screenshot_localhost.png
+
+# Python
+__pycache__/
+*.pyc
+
+# Node / vendor cache (not needed for build; copied as curated vendor files)
+**/node_modules/
