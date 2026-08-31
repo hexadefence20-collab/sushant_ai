@@ -7,7 +7,8 @@ FROM --platform=linux/amd64 python:3.12-slim
 
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
-    PIP_NO_CACHE_DIR=1
+    PIP_NO_CACHE_DIR=1 \
+    PYTHONPATH=/elibrary
 
 WORKDIR /elibrary
 
@@ -23,8 +24,10 @@ COPY elibrary/run.sh ./run.sh
 # Keep the content/ directory layout that config.py expects (CONTENT_DIR).
 COPY hindi_novels ./content
 
-RUN chmod +x ./run.sh
+RUN chmod +x /elibrary/run.sh
 
 EXPOSE 8000
 
-CMD ["./run.sh"]
+WORKDIR /elibrary
+
+CMD ["/elibrary/run.sh"]
