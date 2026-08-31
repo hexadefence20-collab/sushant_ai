@@ -81,6 +81,14 @@ def open_ticket(book_id: str, request: Request):
     }
 
 
+def _is_public_ip(ip: str) -> bool:
+    try:
+        first = ip.split(".")[0]
+        return first not in ("10", "127", "0") and not ip.startswith("192.168") and not ip.startswith("172.16")
+    except Exception:
+        return False
+
+
 def _authorized(request: Request, raw: str | None, book_id: str) -> bool:
     if not raw:
         return False
@@ -89,7 +97,12 @@ def _authorized(request: Request, raw: str | None, book_id: str) -> bool:
         return False
     if payload.get("bid") != book_id:
         return False
-    if payload.get("ip") != request.client.host:
+    # Strict IP binding only helps when the server can observe the real client
+    # IP. Behind Render/Cloudflare the client IP is a changing private NAT
+    # address (10.x/172.x), so enforcing equality would block every legitimate
+    # reader. Enforce the IP match only when a public client IP is visible.
+    ip = request.client.host if request.client else ""
+    if payload.get("ip") and _is_public_ip(ip) and payload.get("ip") != ip:
         return False
     ua = request.headers.get("user-agent", "")[:80]
     if payload.get("ua") != ua:
